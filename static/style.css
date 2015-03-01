@@ -48,4 +48,34 @@ table {
 }
 
 /* ################################################# */
+body {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+}
+header {
+  max-width: 100%;
+  overflow: hidden;
+}
+#nav {
+  text-align: justify;
+  margin-top: 32px;
+  margin-bottom: -50px;
+  margin-right: 10px;
+  float: right;
+}
+#nav li:after {
+  content: '|';
+}
+#nav li:last-child:after {
+  content: none;
+}
+#nav li {
+  display: inline-block;
+}
+#nav a {
+  text-decoration: none;
+  padding: 0 5px 0 5px;
+}
+
 
