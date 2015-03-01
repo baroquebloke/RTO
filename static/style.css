@@ -55,13 +55,11 @@ body {
 }
 header {
   max-width: 100%;
+  background-image: url(/static/logos/full-width-logo.png);
   overflow: hidden;
 }
 #nav {
   text-align: justify;
-  margin-top: 32px;
-  margin-bottom: -50px;
-  margin-right: 10px;
   float: right;
 }
 #nav li:after {
@@ -75,7 +73,11 @@ header {
 }
 #nav a {
   text-decoration: none;
+  color: black;
   padding: 0 5px 0 5px;
+}
+#nav a:hover {
+  color: green;
 }
 
 
