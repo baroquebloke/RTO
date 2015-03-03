@@ -56,7 +56,12 @@ body {
 header {
   max-width: 100%;
   background-image: url(/static/logos/full-width-logo.png);
+  background-repeat: no-repeat;
+  height: 250px;
   overflow: hidden;
+}
+menu {
+    margin-top: 33px;
 }
 #nav {
   text-align: justify;
@@ -79,5 +84,4 @@ header {
 #nav a:hover {
   color: green;
 }
-
 
