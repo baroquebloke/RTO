@@ -48,41 +48,65 @@ table {
 }
 
 /* ################################################# */
-body {
+
+.social {
+    padding: 2px;
+    margin-bottom: -25px;
+    float: right;
+}
+.social ul li {
+    display:    inline-block;
+}
+.icon {
+    width:  24px;
+    height: 24px;
+    display:    block;
+    background-repeat:  no-repeat;
+}
+.facebook {
+    background-image:   url(/static/logos/24_facebook.png);
+}
+.twitter {
+    background-image:   url(/static/logos/24_twitter.png);
+}
+.youtube {
+    background-image:   url(/static/logos/24_youtube.png);
+}
+
+.container {
   max-width: 1000px;
   padding: 10px;
   margin: 0 auto;
 }
 header {
-  max-width: 100%;
-  background-image: url(/static/logos/full-width-logo.png);
-  background-repeat: no-repeat;
-  height: 250px;
-  overflow: hidden;
+    max-width: 100%;
+    background-image: url(/static/logos/full-width-logo.png);
+    background-repeat: no-repeat;
+    height: 144px;
+    overflow: hidden;
+    clear: both;
 }
 menu {
     margin-top: 33px;
+    text-align: justify;
+    float: right;
 }
-#nav {
-  text-align: justify;
-  float: right;
+menu li:after {
+    content: '|';
 }
-#nav li:after {
-  content: '|';
+menu li:last-child:after {
+    content: none;
+} 
+menu li {
+    display: inline-block;
 }
-#nav li:last-child:after {
-  content: none;
+menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px 0 5px;
 }
-#nav li {
-  display: inline-block;
-}
-#nav a {
-  text-decoration: none;
-  color: black;
-  padding: 0 5px 0 5px;
-}
-#nav a:hover {
-  color: green;
+menu a:hover {
+    color: green;
 }
 
 .pics {
@@ -111,4 +135,11 @@ menu {
 }
 #slide_nav a:focus {
     outline: none;
+}
+footer {
+    max-width: 100%;
+    background-image: url(/static/logos/footer.png);
+    background-repeat: no-repeat;
+    height: 144px;
+    overflow: hidden;
 }
