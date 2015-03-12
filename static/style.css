@@ -48,7 +48,9 @@ table {
 }
 
 /* ################################################# */
-
+html, body {
+    height: 100%;
+}
 .social {
     padding: 2px;
     margin-bottom: -25px;
@@ -86,26 +88,31 @@ header {
     overflow: hidden;
     clear: both;
 }
-menu {
-    margin-top: 33px;
+#home_link {
+    position: absolute;
+    height: 144px;
+    width: 173px;
+}
+menu #nav {
     text-align: justify;
+    padding-top: 33px;
     float: right;
 }
-menu li:after {
+menu #nav li:after {
     content: '|';
 }
-menu li:last-child:after {
+menu #nav li:last-child:after {
     content: none;
 } 
-menu li {
+menu #nav li {
     display: inline-block;
 }
-menu a {
+menu #nav a {
     text-decoration: none;
     color: black;
     padding: 0 5px 0 5px;
 }
-menu a:hover {
+menu #nav a:hover {
     color: green;
 }
 
@@ -136,10 +143,22 @@ menu a:hover {
 #slide_nav a:focus {
     outline: none;
 }
+.container {
+    min-height: 100%;
+    margin-bottom: -144px;
+}
+.container:after {
+    content: "";
+    display: block;
+}
+footer, .container:after {
+    height: 144px;
+}
 footer {
-    max-width: 100%;
+    max-width: 1000px;
     background-image: url(/static/logos/footer.png);
     background-repeat: no-repeat;
     height: 144px;
+    margin: 0 auto;
     overflow: hidden;
 }

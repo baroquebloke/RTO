@@ -21,8 +21,9 @@
         </div>
         <div class="container">
             <header>
+                <a id="home_link" href="/index"></a>
                 <menu>
-                    <ul>
+                    <ul id="nav">
                         <li>
                             <a href="/about">About RTO</a>
                         </li>
@@ -44,10 +45,20 @@
             <div class="page-content">
                 {% block index %}
                 {% endblock %}
+                {% block about %}
+                {% endblock %}
+                {% block press %}
+                {% endblock %}
+                {% block projects %}
+                {% endblock %}
+                {% block productions %}
+                {% endblock %}
+                {% block donate %}
+                {% endblock %}
             </div>
-            <footer>
-            </footer> 
         </div>
+        <footer>
+        </footer> 
     </body>
 </html>
                                      
