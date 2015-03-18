@@ -44,9 +44,17 @@ $(document).ready(function() {
             timeout: 5000, 
             pause: 1,
             pager:  '#slide_nav', 
-           
+            pagerAnchorBuilder: paginate
         });
-    });
+});
+function paginate(ind, el) {
+        if (ind == 0) return '<span>Service One</span>';
+        else if (ind == 1) return '<span>Service Two</span>';        
+        else if (ind == 2) return '<span>Service three</span>';
+        else if (ind == 3) return '<span>Service four</span>';
+        else if (ind == 4) return '<span>Service five</span>';
+        else if (ind == 5) return '<span>Service Six</span>';
+}
 
 </script>
 {% endblock %}
