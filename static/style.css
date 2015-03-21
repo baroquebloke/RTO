@@ -52,7 +52,7 @@ html, body {
     height: 100%;
 }
 .social {
-    padding: 2px;
+    padding: 5px;
     margin-bottom: -25px;
     float: right;
 }
@@ -116,33 +116,6 @@ menu #nav a:hover {
     color: green;
 }
 
-.pics {
-    height:  400px;
-    width:   700px;
-    margin:  0 auto;
-}
-.pics img {
-    top:  0;
-    left: 0;
-}
-#slide_nav {
-    margin-top: 10px;
-    text-align: center;
-}
-#slide_nav a {
-    border: 1px
-    solid #ccc;
-    background: #fc0;
-    text-decoration: none;
-    margin: 0 5px;
-    padding: 3px 5px;
-}
-#slide_nav a.activeSlide {
-    background: #ea0
-}
-#slide_nav a:focus {
-    outline: none;
-}
 .container {
     min-height: 100%;
     margin-bottom: -144px;
