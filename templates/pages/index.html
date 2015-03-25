@@ -8,23 +8,46 @@
             View More
         </figcaption>
     </figure>
-    <div><img src="/static/slides/7x4_2.jpg"/></div> 
-    <div><img src="/static/slides/7x4_3.jpg"/></div> 
-    <div><img src="/static/slides/7x4_4.jpg"/></div> 
-    <div><img src="/static/slides/7x4_5.jpg"/></div> 
-    <div><img src="/static/slides/7x4_6.jpg"/></div> 
+    <figure>
+        <img src="/static/slides/7x4_2.jpg"/>
+        <figcaption>
+            View More
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/static/slides/7x4_3.jpg"/>
+        <figcaption>
+            View More
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/static/slides/7x4_4.jpg"/>
+        <figcaption>
+            View More
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/static/slides/7x4_5.jpg"/>
+        <figcaption>
+            View More
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/static/slides/7x4_6.jpg"/>
+        <figcaption>
+            View More
+        </figcaption>
+    </figure>
 </div> 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.slider').slick({
-      centerMode: true,
       dots: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 1000,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
       });
   });
 </script>

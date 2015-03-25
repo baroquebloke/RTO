@@ -77,7 +77,6 @@ html, body {
 
 .container {
   max-width: 1000px;
-  padding: 10px;
   margin: 0 auto;
 }
 header {
@@ -123,10 +122,6 @@ menu #nav a:hover {
 .container:after {
     content: "";
     display: block;
-}
-.slider {
-    max-width: 100%;
-    margin: 0 auto;
 }
 footer, .container:after {
     height: 144px;
