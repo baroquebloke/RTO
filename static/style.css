@@ -51,6 +51,9 @@ table {
 html, body {
     height: 100%;
 }
+html {
+    padding: 0 10px 0 10px;
+}
 .social {
     padding: 5px;
     margin-bottom: -25px;
@@ -122,6 +125,17 @@ menu #nav a:hover {
 .container:after {
     content: "";
     display: block;
+}
+.page-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.page-content img {
+    max-width: 100%;
+    height: auto;
+}
+.slider {
+    margin: 0 auto;
 }
 footer, .container:after {
     height: 144px;
