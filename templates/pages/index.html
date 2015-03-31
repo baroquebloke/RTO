@@ -1,57 +1,57 @@
 {% extends "/layouts/base.html" %}
 
 {% block index %}
-<div class="slider">
+<div class="owl-carousel">
     <figure>
-        <img src="/static/slides/7x4_1.jpg"/>
+        <img src="/static/slides/1920x1200_2.jpg"/>
         <figcaption>
             View More
         </figcaption>
     </figure>
     <figure>
-        <img src="/static/slides/7x4_2.jpg"/>
+        <img src="/static/slides/1920x1200_1.jpg"/>
         <figcaption>
             View More
         </figcaption>
     </figure>
     <figure>
-        <img src="/static/slides/7x4_3.jpg"/>
+        <img src="/static/slides/1920x1200_2.jpg"/>
         <figcaption>
             View More
         </figcaption>
     </figure>
     <figure>
-        <img src="/static/slides/7x4_4.jpg"/>
+        <img src="/static/slides/1920x1200_1.jpg"/>
         <figcaption>
             View More
         </figcaption>
     </figure>
     <figure>
-        <img src="/static/slides/7x4_5.jpg"/>
+        <img src="/static/slides/1920x1200_2.jpg"/>
         <figcaption>
             View More
         </figcaption>
     </figure>
     <figure>
-        <img src="/static/slides/7x4_6.jpg"/>
+        <img src="/static/slides/1920x1200_1.jpg"/>
         <figcaption>
             View More
         </figcaption>
     </figure>
 </div> 
-<script type="text/javascript" src="/static/slick/slick.min.js"></script>
+<script src="/static/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('.slider').slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 1200,
-      fade: true,
-      });
-  });
+$(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            navigation: true,
+            navigationText: ["<",">"],
+            autoPlay: true,
+            stopOnHover: true,
+            slideSpeed: 1000,
+            paginationSpeed: 1000,
+            singleItem: true,
+            responsiveRefreshRate: 1,
+    });
+});
 </script>
 {% endblock %}

@@ -50,13 +50,13 @@ table {
 /* ################################################# */
 html, body {
     height: 100%;
+    font-family: Futura;
 }
-html {
-    padding: 0 10px 0 10px;
+body {
 }
 .social {
     padding: 5px;
-    margin-bottom: -25px;
+    margin-top: -47px;
     float: right;
 }
 .social ul li {
@@ -79,25 +79,24 @@ html {
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 header {
     max-width: 100%;
-    background-image: url(/static/logos/full-width-logo.png);
+    background-image: url(/static/logos/extra_long_header.png);
     background-repeat: no-repeat;
-    height: 144px;
+    height: 95px;
     overflow: hidden;
     clear: both;
 }
 #home_link {
     position: absolute;
-    height: 144px;
-    width: 173px;
+    height: 100px;
+    width: 125px;
 }
 menu #nav {
     text-align: justify;
-    padding-top: 33px;
+    padding: 7px 5px 0 0;
     float: right;
 }
 menu #nav li:after {
@@ -112,7 +111,6 @@ menu #nav li {
 menu #nav a {
     text-decoration: none;
     color: black;
-    padding: 0 5px 0 5px;
 }
 menu #nav a:hover {
     color: green;
@@ -120,31 +118,41 @@ menu #nav a:hover {
 
 .container {
     min-height: 100%;
-    margin-bottom: -144px;
+    margin-bottom: -95px;
 }
 .container:after {
     content: "";
     display: block;
 }
 .page-content {
-    max-width: 700px;
+    max-width: 1000px;
+    padding: 5px;
     margin: 0 auto;
 }
 .page-content img {
     max-width: 100%;
-    height: auto;
 }
-.slider {
-    margin: 0 auto;
+.owl-carousel {
+}
+figcaption {
+    right: 0;
+    position: absolute;
+    max-height: 40%;
+    max-width: 75%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    bottom: 10%;
+
 }
 footer, .container:after {
-    height: 144px;
+    height: 95px;
 }
 footer {
-    max-width: 1000px;
+    max-width: 1200px;
     background-image: url(/static/logos/footer.png);
     background-repeat: no-repeat;
-    height: 144px;
+    height: 95px;
     margin: 0 auto;
     overflow: hidden;
 }
