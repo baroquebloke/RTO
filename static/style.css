@@ -77,6 +77,9 @@ body {
 .youtube {
     background-image:   url(/static/logos/24_youtube.png);
 }
+.soundcloud {
+    background-image:   url(/static/logos/24_soundcloud.png);
+}
 
 .container {
     margin: 0 auto;
@@ -118,7 +121,7 @@ menu #nav a:hover {
 
 .container {
     min-height: 100%;
-    margin-bottom: -95px;
+    margin-bottom: -21px;
 }
 .container:after {
     content: "";
@@ -146,13 +149,15 @@ figcaption {
 
 }
 footer, .container:after {
-    height: 95px;
+    height: 21px;
 }
 footer {
-    max-width: 1200px;
-    background-image: url(/static/logos/footer.png);
-    background-repeat: no-repeat;
-    height: 95px;
+    width: 100%;
+    border-top: 1px solid #000000;
+    height: 20px;
     margin: 0 auto;
-    overflow: hidden;
+    text-align: center;
+}
+footer li {
+    display: inline-block;
 }
