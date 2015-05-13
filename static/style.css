@@ -140,13 +140,12 @@ menu #nav a:hover {
 .page-content img {
 	max-width: 100%;
 }
-.owl-carousel {
+.owl-carousel img {
+	border-radius: 5px;
 }
 figcaption {
 	right: 0;
-	position: absolute;
 	max-height: 40%;
-	max-width: 75%;
 	background: rgba(0, 0, 0, 0.7);
 	color: white;
 	padding: 10px 20px;
