@@ -1,63 +1,98 @@
 {% extends "/layouts/base.html" %}
 
 {% block index %}
-<div class="owl-carousel">
-    <figure>
-        <img src="/static/slides/1920x1200_2.jpg"/>
-        <figcaption>
-            <h1>Hu Tong</h1>
-            <p>Click here to learn more</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/static/slides/1920x1200_1.jpg"/>
-        <figcaption>
-            <h1>Nova</h1>
-            <p>Click here to learn more</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/static/slides/1920x1200_2.jpg"/>
-        <figcaption>
-            <h1>Paradox</h1>
-            <p>Click here to learn more</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/static/slides/1920x1200_1.jpg"/>
-        <figcaption>
-            <h1>Pop-Ups</h1>
-            <p>Click here to learn more</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/static/slides/1920x1200_2.jpg"/>
-        <figcaption>
-            <h1>Leave Me Alone!</h1>
-            <p>Click here to learn more</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/static/slides/1920x1200_1.jpg"/>
-        <figcaption>
-            <h1>Operahead</h1>
-            <p>Click here to learn more</p>
-        </figcaption>
-    </figure>
+<div id="owl-slides" class="owl-carousel owl-theme">
+	<figure>
+		<img src="/static/slides/1920x1200_2.jpg"/>
+		<figcaption class="fig-nav">
+			<a class="btn prev">Previous</a>
+			<a class="btn next">Next</a>
+		</figcaption>
+		<figcaption class="slide-info">
+			<h1>Hu Tong</h1>
+			<p>Click here to learn more</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/static/slides/1920x1200_1.jpg"/>
+		<figcaption class="fig-nav">
+			<a class="btn prev">Previous</a>
+			<a class="btn next">Next</a>
+		</figcaption>
+		<figcaption claass="slide-info">
+			<h1>Nova</h1>
+			<p>Click here to learn more</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/static/slides/1920x1200_2.jpg"/>
+		<figcaption class="fig-nav">
+			<a class="btn prev">Previous</a>
+			<a class="btn next">Next</a>
+		</figcaption>
+		<figcaption class="slide-info">
+			<h1>Paradox</h1>
+			<p>Click here to learn more</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/static/slides/1920x1200_1.jpg"/>
+		<figcaption class="fig-nav">
+			<a class="btn prev">Previous</a>
+			<a class="btn next">Next</a>
+		</figcaption>
+		<figcaption class="slide-info">
+			<h1>Pop-Ups</h1>
+			<p>Click here to learn more</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/static/slides/1920x1200_2.jpg"/>
+		<figcaption class="fig-nav">
+			<a class="btn prev">Previous</a>
+			<a class="btn next">Next</a>
+		</figcaption>
+		<figcaption class="slide-info">
+			<h1>Leave Me Alone!</h1>
+			<p>Click here to learn more</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/static/slides/1920x1200_1.jpg"/>
+		<figcaption class="fig-nav">
+			<a class="btn prev">Previous</a>
+			<a class="btn next">Next</a>
+		</figcaption>
+		<figcaption class="slide-info">
+			<h1>Operahead</h1>
+			<p>Click here to learn more</p>
+		</figcaption>
+	</figure>
 </div> 
 <script src="/static/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            navigation: true,
-            navigationText: ["<",">"],
-            autoPlay: true,
-            stopOnHover: true,
-            slideSpeed: 1000,
-            paginationSpeed: 3000,
-            singleItem: true,
-            responsiveRefreshRate: 1,
-    });
+		$(".owl-carousel").owlCarousel({
+			navigation: false,
+			autoPlay: true,
+			stopOnHover: true,
+			slideSpeed: 1000,
+			paginationSpeed: 3000,
+			singleItem: true,
+			responsiveRefreshRate: 1,
+		});
+			var owl = $("#owl-slides");
+		 
+			  owl.owlCarousel();
+		  
+				// Custom Navigation Events
+			
+			$(".next").click(function(){
+				owl.trigger('owl.next');
+				})
+			$(".prev").click(function(){
+				owl.trigger('owl.prev');
+				})
 });
 </script>
 {% endblock %}

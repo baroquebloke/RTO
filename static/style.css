@@ -140,17 +140,41 @@ menu #nav a:hover {
 .page-content img {
 	max-width: 100%;
 }
-.owl-carousel img {
-	border-radius: 5px;
-}
-figcaption {
-	right: 0;
+/*figcaption {
 	max-height: 40%;
 	background: rgba(0, 0, 0, 0.7);
 	color: white;
 	padding: 10px 20px;
-	bottom: 10%;
+}*/
+
+figure {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
 }
+
+figure:hover .fig-nav {
+	opacity: 1;
+	left: 0;
+}
+figcaption {
+	position: absolute;
+	max-height: 40%;
+	max-width: 75%;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px 20px;
+	opacity: 0;
+	bottom: 4%;
+	left: -30%;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+}
+
 footer, .container:after {
 	height: 21px;
 }
@@ -164,3 +188,4 @@ footer {
 footer li {
 	display: inline-block;
 }
+								
