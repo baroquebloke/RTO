@@ -28,11 +28,11 @@
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
 	right: -125px;
-	bottom: 23px;
+	bottom: 31px;
 }
 .owl-theme .owl-controls .owl-buttons .owl-prev {
 	left: -125px;
-	bottom: 23px;
+	bottom: 32px;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
