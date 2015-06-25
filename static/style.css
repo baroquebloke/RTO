@@ -55,6 +55,7 @@ html, body {
 body {
 	max-width: 1000px;
 	min-width: 480px;
+	padding: 0 10px 0 10px;
 	margin: 0 auto;
 }
 .social {
@@ -121,10 +122,17 @@ menu #nav a:hover {
 }
 .container {
 	width: 100%;
+	min-height: 100%;
+	margin-bottom: -35px;
+}
+.container:after {
+	content: "";
+	display: block;
+	height: 35px;
 }
 .page-content {
 	width: 100%;
-	padding-top: 20px;
+	padding: 20px 0 35px 0;
 	text-align: justify;
 	line-height: 1.5;
 	margin: 0 auto;
@@ -160,18 +168,40 @@ menu #nav a:hover {
 .slick-nav-cust {
 	background: yellow;
 	position: relative;
+	top: -16px;
 	width: 200px;
 	margin: 0 auto;
 }
-.slick-prev {
+.prev {
+	position: absolute;
+	left: -35px;
 	background: url(/static/left.svg);
+	width: 32px;
+	height: 32px;
+	background-size: contain;
+	float: left;
+}
+.next {
+	position: absolute;
+	right: -35px;
+	background: url(/static/right.svg);
+	width: 32px;
+	height: 32px;
+	background-size: contain;
+	float: right;
+}
+.prev:hover {
+	cursor: pointer;
+}
+.next:hover {
+	cursor: pointer;
 }
 footer {
 	width: 100%;
+	height: 25px;
+	padding-top: 7px;
 	border-top: 3px solid #000000;
 	margin: 0 auto;
-	margin-top: 20px;
-	padding: 7px 0 4px 0;
 	text-align: center;
 	float: left;
 }
@@ -194,8 +224,6 @@ footer a:hover {
 /*###############################################################*/
 @media screen and (max-width: 750px) {
 	.page-content { max-width: 100%; }
-	.page-content p { padding: 0 10px 0 10px; }
-	.about p { padding: 10px; }
 	.press p { text-align: center; 
 						 padding: 10px; }
 	#bio-pic { padding: 0 0 0 10px; }
@@ -203,8 +231,6 @@ footer a:hover {
 
 @media screen and (max-width: 640px) {
 	.page-content { max-width: 100%; }
-	.page-content p { padding: 0 10px 0 10px; }
-	.about p { padding: 10px; }
 	.press p { text-align: center; 
 						 padding: 10px; } 
 	#bio-pic { width: 360px;
