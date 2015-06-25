@@ -54,7 +54,7 @@ html, body {
 }
 body {
 	max-width: 1000px;
-	min-width: 480px;
+	min-width: 320px;
 	padding: 0 10px 0 10px;
 	margin: 0 auto;
 }
@@ -168,7 +168,7 @@ menu #nav a:hover {
 .slick-nav-cust {
 	background: yellow;
 	position: relative;
-	top: -16px;
+	top: -18px;
 	width: 200px;
 	margin: 0 auto;
 }
@@ -196,6 +196,27 @@ menu #nav a:hover {
 .next:hover {
 	cursor: pointer;
 }
+
+.production-container {
+	float: left;
+}
+.production {
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+}
+.production img {
+	width: 30%;
+	height: auto;
+	float: left;
+}
+figcaption {
+	max-width: 69%;
+	margin-left: 1%;
+	float: left;
+}
+
+
 footer {
 	width: 100%;
 	height: 25px;
@@ -222,14 +243,26 @@ footer a:hover {
 	color: green;
 }
 /*###############################################################*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 568px) {
 	.page-content { max-width: 100%; }
 	.press p { text-align: center; 
 						 padding: 10px; }
-	#bio-pic { padding: 0 0 0 10px; }
+	#bio-pic { padding: 0; 
+						 float: none;
+						 display: block;
+						 margin: 0 auto; }
+	.production img { display: block;
+										width: 300px;
+										height: auto;
+										margin: 0 auto;
+										float: none; }
+	figcaption { float: none; 
+							 max-width: 100%;
+							 margin: 0 auto; 
+						   text-align: justify;}
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 320px) {
 	.page-content { max-width: 100%; }
 	.press p { text-align: center; 
 						 padding: 10px; } 
