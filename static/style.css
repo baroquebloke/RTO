@@ -266,9 +266,5 @@ footer a:hover {
 	.page-content { max-width: 100%; }
 	.press p { text-align: center; 
 						 padding: 10px; } 
-	#bio-pic { width: 360px;
-						 padding: 0;
-						 margin: 0 auto;
-						 float: none; }
 }
 								
