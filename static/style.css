@@ -54,7 +54,6 @@ html, body {
 }
 body {
 	max-width: 1000px;
-	min-width: 320px;
 	padding: 0 10px 0 10px;
 	margin: 0 auto;
 }
@@ -98,6 +97,27 @@ header {
 	position: absolute;
 	height: 95px;
 	width: 130px;
+}
+#mobile-menu {
+	padding: 8px 5px 0 0;
+	display: none;
+	float: right;
+}
+#mobile-nav {
+	position: absolute;
+	padding: 15px;
+	top: 31px;
+	right: 0px;
+	text-align: right;
+	z-index: 1;
+	display: none;
+	background: gray;
+	-webkit-column-width: 20%;
+	   -moz-column-width: 20%;
+					column-width: 20%;
+}
+#mobile-nav li {
+	display: inline-block;
 }
 menu #nav {
 	text-align: justify;
@@ -260,11 +280,9 @@ footer a:hover {
 							 max-width: 100%;
 							 margin: 0 auto; 
 						   text-align: justify;}
+	menu #nav { position: absolute; 
+							top: -999px; }	
+	#mobile-menu { display: inline; }
 }
 
-@media screen and (max-width: 320px) {
-	.page-content { max-width: 100%; }
-	.press p { text-align: center; 
-						 padding: 10px; } 
-}
 								
