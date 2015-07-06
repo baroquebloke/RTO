@@ -101,23 +101,39 @@ header {
 #mobile-menu {
 	padding: 8px 5px 0 0;
 	display: none;
+	margin: 0 auto;
 	float: right;
+}
+#mobile-menu a {
+	text-decoration: none;
 }
 #mobile-nav {
 	position: absolute;
-	padding: 15px;
-	top: 31px;
-	right: 0px;
-	text-align: right;
+	max-width: 300px;
+	padding: 10px;
+	top: 50px;
+	left: 10px;
+	right: 10px;
+	margin: 0 auto;
+	text-align: center;
 	z-index: 1;
 	display: none;
-	background: gray;
-	-webkit-column-width: 20%;
-	   -moz-column-width: 20%;
-					column-width: 20%;
+	font-size: 200%;
+	background: white;
+  -webkit-box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.4); 
+		 -moz-box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.4);
+				  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 #mobile-nav li {
-	display: inline-block;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#mobile-nav li:first-child {
+	padding-top: 0;
+}
+#mobile-nav li:last-child {
+	padding-bottom: 0;
+	border-bottom: 1px solid white ;
 }
 menu #nav {
 	text-align: justify;
