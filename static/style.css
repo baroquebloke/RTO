@@ -69,7 +69,7 @@ body {
 	width:  24px;
 	height: 24px;
 	display:    block;
-	margin-left: 12px;
+	margin-left: 5px;
 	background-repeat:  no-repeat;
 }
 .facebook {
@@ -198,19 +198,20 @@ menu #nav a:hover {
 	text-align: center;
 	padding: 10px 0 10px 0;
 }
-#slider {
-	display: none;
+.slick-slider figure {
+	max-width: 1000px;
+	position: relative;
 }
 .slick-nav-cust {
-	background: yellow;
 	position: relative;
-	top: -18px;
-	width: 200px;
-	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 1;
+	top: 32px;
+	width: 64px;
+	height: 32px;
 }
 .prev {
 	position: absolute;
-	left: -35px;
 	background: url(/static/left.svg);
 	width: 32px;
 	height: 32px;
@@ -219,7 +220,7 @@ menu #nav a:hover {
 }
 .next {
 	position: absolute;
-	right: -35px;
+	right: 0px;
 	background: url(/static/right.svg);
 	width: 32px;
 	height: 32px;
@@ -236,17 +237,17 @@ menu #nav a:hover {
 .production-container {
 	float: left;
 }
-.production {
+.production-container figure {
 	width: 100%;
 	margin-bottom: 20px;
 	float: left;
 }
-.production img {
+.production-container img {
 	width: 30%;
 	height: auto;
 	float: left;
 }
-figcaption {
+.production-container figcaption {
 	max-width: 69%;
 	margin-left: 1%;
 	float: left;
