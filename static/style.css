@@ -109,7 +109,7 @@ header {
 }
 #mobile-nav {
 	position: absolute;
-	max-width: 300px;
+	max-width: 100%;
 	padding: 10px;
 	top: 50px;
 	left: 10px;
@@ -175,15 +175,17 @@ menu #nav a:hover {
 	float: left;
 }
 #bio-pic {
-	width: 300px;
+	max-width: 300px;
 	margin: 0 20px 0 0;
 	float: left;
 }
-#test-link {
-	margin: 15px;
+#NPR-link {
+	color: green;
+	text-decoration: none;
 }
 .page-content p {
 	text-indent: 30px;
+	padding-bottom: 20px;
 }
 .page-content em {
 	font-style: italic;
@@ -192,11 +194,19 @@ menu #nav a:hover {
 	width: 100%;
 }
 .about p {
-	padding: 10px 0 10px 0;
 }
 .press p {
 	text-align: center;
 	padding: 10px 0 10px 0;
+}
+.slick-slider {
+	text-align: center;
+}
+.slick-slider h1 {
+	font-size: 150%;
+}
+.slick-slider p {
+	text-indent: 0px;
 }
 .slick-slider figure {
 	max-width: 1000px;
@@ -236,12 +246,16 @@ menu #nav a:hover {
 }
 
 .production-container {
+	max-width: 100%;
 	float: left;
 }
-.production-container figure {
+.production {
 	width: 100%;
 	margin-bottom: 20px;
 	float: left;
+}
+.production h1 {
+	font-size: 150%;
 }
 .production-container img {
 	width: 30%;
@@ -249,7 +263,7 @@ menu #nav a:hover {
 	float: left;
 }
 .production-container figcaption {
-	max-width: 69%;
+	width: 68%;
 	margin-left: 1%;
 	float: left;
 }
@@ -289,8 +303,17 @@ footer a:hover {
 						 float: none;
 						 display: block;
 						 margin: 0 auto; }
+	.slick-slider h1 { text-align: center; }
+	.page-content p { text-indent: 0px; }
+	.production-container figcaption {
+			width: 100%; 
+			margin-left: 0%; }
+	.production-container img {
+			width: 100%; }
+	.production-container h1, p {
+			text-align: center;}
 	.production img { display: block;
-										width: 300px;
+										max-width: 300px;
 										height: auto;
 										margin: 0 auto;
 										float: none; }
@@ -301,6 +324,7 @@ footer a:hover {
 	menu #nav { position: absolute; 
 							top: -999px; }	
 	#mobile-menu { display: inline; }
+	#mobile-menu a { color: black; }
 }
 
 								
