@@ -183,6 +183,11 @@ menu #nav a:hover {
 	color: green;
 	text-decoration: none;
 }
+.page-content ul {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
 .page-content p {
 	text-indent: 30px;
 	padding-bottom: 20px;
@@ -211,6 +216,13 @@ menu #nav a:hover {
 .slick-slider figure {
 	max-width: 1000px;
 	position: relative;
+}
+.slides a {
+	text-decoration: none;
+	color: black;
+}
+.slides a:hover {
+	color: green;
 }
 .slick-nav-cust {
 	position: relative;
@@ -268,6 +280,23 @@ menu #nav a:hover {
 	float: left;
 }
 
+.videoWrapper{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.centered-text {
+	text-align: center;
+}
 
 footer {
 	width: 100%;
@@ -296,7 +325,8 @@ footer a:hover {
 }
 /*###############################################################*/
 @media screen and (max-width: 568px) {
-	.page-content { max-width: 100%; }
+	.page-content { max-width: 100%; 
+									text-align: center; }
 	.press p { text-align: center; 
 						 padding: 10px; }
 	#bio-pic { padding: 0; 
