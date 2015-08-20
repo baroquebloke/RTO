@@ -306,8 +306,18 @@ menu #nav a:hover {
 	margin: 10px 0 50px 0;
 	text-indent: 0px;
 }
+.centered-text h2, h4 {
+	text-align: center;
+}
+.centered-text h3 {
+	text-align: center;
+	margin: 50px 0 50px 0;
+	padding-top: 50px;
+	border-top: 1px solid black
+}
 .centered-text h1 {
 	text-align: center;
+	margin-bottom: 50px;
 }
 .contact-info {
 	text-align: center;
